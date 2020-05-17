@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Swiper</title>
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgbox"><img src="images/ironman.jpg"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgbox"><img src="images/thor.jpg"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgbox"><img src="images/cap.jpg"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgbox"><img src="images/blackwidow.jpg"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgbox"><img src="images/hawkeye.jpg"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgbox"><img src="images/captaonmarvel.jpg"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgbox"><img src="images/Rocket.jpg"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgbox"><img src="images/rhodey.jpg"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgbox"><img src="images/spiderman.jpg"></div>
+            </div>
+
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 20,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                desableOnInteraction: false,
+            }
+        });
+    </script>
+</body>
+
+</html>
